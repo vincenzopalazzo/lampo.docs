@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tutorial-lampod-basics/markdown-features",
+  "id": "tutorial-lampod-basics/markdown-features",
+  "title": "How to Use Lampo Deamon",
+  "description": "TODO: describe how to use lampo deamon",
+  "source": "@site/docs/tutorial-lampod-basics/markdown-features.mdx",
+  "sourceDirName": "tutorial-lampod-basics",
+  "slug": "/tutorial-lampod-basics/markdown-features",
+  "permalink": "/docs/tutorial-lampod-basics/markdown-features",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-lampod-basics/markdown-features.mdx",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Understand How to Configure Lampo",
+    "permalink": "/docs/tutorial-lampod-basics/how-to-configure"
+  },
+  "next": {
+    "title": "Deploy your site",
+    "permalink": "/docs/tutorial-lampod-basics/deploy-your-site"
+  }
+}

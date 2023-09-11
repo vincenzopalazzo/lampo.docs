@@ -1,0 +1,15 @@
+{
+  "title": "Lampo SDK - Extras",
+  "slug": "/category/lampo-sdk---extras",
+  "permalink": "/docs/category/lampo-sdk---extras",
+  "navigation": {
+    "previous": {
+      "title": "Markdown Features",
+      "permalink": "/docs/tutorial-basics/markdown-features"
+    },
+    "next": {
+      "title": "Manage Docs Versions",
+      "permalink": "/docs/tutorial-extras/manage-docs-versions"
+    }
+  }
+}

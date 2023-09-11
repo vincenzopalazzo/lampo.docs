@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tutorial-lampod-basics/how-to-configure",
+  "id": "tutorial-lampod-basics/how-to-configure",
+  "title": "Understand How to Configure Lampo",
+  "description": "TODO: this require more work",
+  "source": "@site/docs/tutorial-lampod-basics/how-to-configure.md",
+  "sourceDirName": "tutorial-lampod-basics",
+  "slug": "/tutorial-lampod-basics/how-to-configure",
+  "permalink": "/docs/tutorial-lampod-basics/how-to-configure",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-lampod-basics/how-to-configure.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Swap Bitcoin Node with Nakamoto",
+    "permalink": "/docs/tutorial-lampod-basics/configure-bitcoin-backend"
+  },
+  "next": {
+    "title": "How to Use Lampo Deamon",
+    "permalink": "/docs/tutorial-lampod-basics/how-to-use"
+  }
+}

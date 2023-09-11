@@ -1,0 +1,49 @@
+{
+  "blogPosts": [
+    {
+      "id": "welcome",
+      "metadata": {
+        "permalink": "/blog/welcome",
+        "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2023-09-22-welcome/index.md",
+        "source": "@site/blog/2023-09-22-welcome/index.md",
+        "title": "Welcome",
+        "description": "Hello to the Lightning and Bitcoin communities!",
+        "date": "2023-09-22T00:00:00.000Z",
+        "formattedDate": "September 22, 2023",
+        "tags": [
+          {
+            "label": "lampo",
+            "permalink": "/blog/tags/lampo"
+          },
+          {
+            "label": "lightning-network",
+            "permalink": "/blog/tags/lightning-network"
+          }
+        ],
+        "readingTime": 1.23,
+        "hasTruncateMarker": false,
+        "authors": [
+          {
+            "name": "Vincenzo Palazzo",
+            "title": "Maintainer of lampo",
+            "url": "https://github.com/vincenzopalazzo",
+            "imageURL": "https://avatars.githubusercontent.com/u/17150045?v=4",
+            "key": "vincenzopalazzo"
+          }
+        ],
+        "frontMatter": {
+          "slug": "welcome",
+          "title": "Welcome",
+          "authors": [
+            "vincenzopalazzo"
+          ],
+          "tags": [
+            "lampo",
+            "lightning-network"
+          ]
+        }
+      },
+      "content": "Hello to the Lightning and Bitcoin communities!\n\nWe're thrilled to introduce **Lampo**, our open-source lightning node implementation crafted meticulously \nin Rust. As technology enthusiasts deeply entrenched in the world of Bitcoin and \nits associated technologies, we noticed a space for an alternative. A space for something robust, transparent, and community-driven. That’s where Lampo steps in.\n\n## Why Lampo?\n\nWhile there are renowned lightning implementations like core lightning, lnd, and eclair, none resonated \nwith our vision for an open-source lightning node built upon the [ldk](https://github.com/lightningdevkit/rust-lightning). Our goal is to \noffer a platform that's not just driven by business needs but also by genuine innovation and community feedback.\n\n## Unique Features\n\nLampo boasts features like swappable APIs, on-chain data sources, and a flexible wallet system. \nAnd yes, we’re future-ready! Plans are already underway to support Fedimint, LSP, and VLS. Our dedication towards \ncreating a powerful architecture will ensure Lampo serves all the needs of the modern lightning network community.\n\n## Join the Conversation\n\nDetermined to maintain clarity, we’ve chosen specific channels for communication:\n- Developers, join us on [Zulip](https://lampo-dev.zulipchat.com/).\n- Community members, our [Reddit community](https://www.reddit.com/r/lampoln/) awaits your insights.\n- For technical questions and feature requests, dive into our GitHub discussions.\n\n## In Conclusion\n\nLampo is more than just software; it's a movement. A movement towards better, more transparent, and community-centric lightning node \ntechnology. We're excited for you to join us on this journey, contribute, question, and help us shape the future of the Lightning Network.\n\nStay electrified!\n\nVincent."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Lampo Lightning Node - Basics",
+  "slug": "/category/lampo-lightning-node---basics",
+  "permalink": "/docs/category/lampo-lightning-node---basics",
+  "navigation": {
+    "previous": {
+      "title": "Lampo Deamon",
+      "permalink": "/docs/intro"
+    },
+    "next": {
+      "title": "LampoD Basic configuration",
+      "permalink": "/docs/tutorial-lampod-basics/basic-configuration"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Lampo SDK - Basics",
+  "description": "5 minutes to learn the most important Docusaurus concepts.",
+  "slug": "/category/lampo-sdk---basics",
+  "permalink": "/docs/category/lampo-sdk---basics",
+  "navigation": {
+    "previous": {
+      "title": "How to contribute",
+      "permalink": "/docs/tutorial-lampod-basics/how-to-contribute"
+    },
+    "next": {
+      "title": "Markdown Features",
+      "permalink": "/docs/tutorial-basics/markdown-features"
+    }
+  }
+}

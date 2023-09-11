@@ -1,0 +1,27 @@
+{
+  "unversionedId": "tutorial-lampod-basics/create-a-blog-post",
+  "id": "tutorial-lampod-basics/create-a-blog-post",
+  "title": "Understand How to Configure Lampo",
+  "description": "TODO: this require more work",
+  "source": "@site/docs/tutorial-lampod-basics/create-a-blog-post.md",
+  "sourceDirName": "tutorial-lampod-basics",
+  "slug": "/tutorial-lampod-basics/create-a-blog-post",
+  "permalink": "/docs/tutorial-lampod-basics/create-a-blog-post",
+  "draft": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-lampod-basics/create-a-blog-post.md",
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Swap Bitcoin Node with Nakamoto",
+    "permalink": "/docs/tutorial-lampod-basics/configure-bitcoin-backend"
+  },
+  "next": {
+    "title": "Markdown Features",
+    "permalink": "/docs/tutorial-lampod-basics/markdown-features"
+  }
+}

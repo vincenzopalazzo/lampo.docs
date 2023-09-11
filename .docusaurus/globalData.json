@@ -1,0 +1,63 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "intro",
+          "docs": [
+            {
+              "id": "intro",
+              "path": "/docs/intro",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-lampod-basics/basic-configuration",
+              "path": "/docs/tutorial-lampod-basics/basic-configuration",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-lampod-basics/configure-bitcoin-backend",
+              "path": "/docs/tutorial-lampod-basics/configure-bitcoin-backend",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-lampod-basics/how-to-configure",
+              "path": "/docs/tutorial-lampod-basics/how-to-configure",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-lampod-basics/how-to-contribute",
+              "path": "/docs/tutorial-lampod-basics/how-to-contribute",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tutorial-lampod-basics/how-to-use",
+              "path": "/docs/tutorial-lampod-basics/how-to-use",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/lampo-lightning-node---basics",
+              "path": "/docs/category/lampo-lightning-node---basics",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/intro",
+                "label": "intro"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

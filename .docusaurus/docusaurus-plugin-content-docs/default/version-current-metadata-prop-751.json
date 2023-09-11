@@ -1,0 +1,97 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": null,
+  "badge": false,
+  "noIndex": false,
+  "className": "docs-version-current",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "Lampo Deamon",
+        "href": "/docs/intro",
+        "docId": "intro"
+      },
+      {
+        "type": "category",
+        "label": "Lampo Lightning Node - Basics",
+        "collapsible": true,
+        "collapsed": true,
+        "items": [
+          {
+            "type": "link",
+            "label": "LampoD Basic configuration",
+            "href": "/docs/tutorial-lampod-basics/basic-configuration",
+            "docId": "tutorial-lampod-basics/basic-configuration"
+          },
+          {
+            "type": "link",
+            "label": "Swap Bitcoin Node with Nakamoto",
+            "href": "/docs/tutorial-lampod-basics/configure-bitcoin-backend",
+            "docId": "tutorial-lampod-basics/configure-bitcoin-backend"
+          },
+          {
+            "type": "link",
+            "label": "Understand How to Configure Lampo",
+            "href": "/docs/tutorial-lampod-basics/how-to-configure",
+            "docId": "tutorial-lampod-basics/how-to-configure"
+          },
+          {
+            "type": "link",
+            "label": "How to Use Lampo Deamon",
+            "href": "/docs/tutorial-lampod-basics/how-to-use",
+            "docId": "tutorial-lampod-basics/how-to-use"
+          },
+          {
+            "type": "link",
+            "label": "How to contribute",
+            "href": "/docs/tutorial-lampod-basics/how-to-contribute",
+            "docId": "tutorial-lampod-basics/how-to-contribute"
+          }
+        ],
+        "href": "/docs/category/lampo-lightning-node---basics"
+      }
+    ]
+  },
+  "docs": {
+    "intro": {
+      "id": "intro",
+      "title": "Lampo Deamon",
+      "description": "Lampo Daemon: A robust and efficient Rust-based lightning node deamon.",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-lampod-basics/basic-configuration": {
+      "id": "tutorial-lampod-basics/basic-configuration",
+      "title": "LampoD Basic configuration",
+      "description": "TODO: needs some work",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-lampod-basics/configure-bitcoin-backend": {
+      "id": "tutorial-lampod-basics/configure-bitcoin-backend",
+      "title": "Swap Bitcoin Node with Nakamoto",
+      "description": "TODO: this requires work work",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-lampod-basics/how-to-configure": {
+      "id": "tutorial-lampod-basics/how-to-configure",
+      "title": "Understand How to Configure Lampo",
+      "description": "TODO: this require more work",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-lampod-basics/how-to-contribute": {
+      "id": "tutorial-lampod-basics/how-to-contribute",
+      "title": "How to contribute",
+      "description": "TODO: still working in progress",
+      "sidebar": "tutorialSidebar"
+    },
+    "tutorial-lampod-basics/how-to-use": {
+      "id": "tutorial-lampod-basics/how-to-use",
+      "title": "How to Use Lampo Deamon",
+      "description": "TODO: describe how to use lampo deamon",
+      "sidebar": "tutorialSidebar"
+    }
+  }
+}

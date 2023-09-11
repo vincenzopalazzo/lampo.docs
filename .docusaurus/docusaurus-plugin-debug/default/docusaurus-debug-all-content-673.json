@@ -1,0 +1,355 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "label": "Next",
+          "banner": null,
+          "badge": false,
+          "noIndex": false,
+          "className": "docs-version-current",
+          "path": "/docs",
+          "tagsPath": "/docs/tags",
+          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs",
+          "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/home/vincent/gittea/lampo.docs/sidebars.js",
+          "contentPath": "/home/vincent/gittea/lampo.docs/docs",
+          "contentPathLocalized": "/home/vincent/gittea/lampo.docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "docs": [
+            {
+              "unversionedId": "intro",
+              "id": "intro",
+              "title": "Lampo Deamon",
+              "description": "Lampo Daemon: A robust and efficient Rust-based lightning node deamon.",
+              "source": "@site/docs/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/docs/intro",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/intro.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1,
+                "title": "Lampo Deamon",
+                "description": "Lampo Daemon: A robust and efficient Rust-based lightning node deamon."
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Lampo Lightning Node - Basics",
+                "permalink": "/docs/category/lampo-lightning-node---basics"
+              }
+            },
+            {
+              "unversionedId": "tutorial-lampod-basics/basic-configuration",
+              "id": "tutorial-lampod-basics/basic-configuration",
+              "title": "LampoD Basic configuration",
+              "description": "TODO: needs some work",
+              "source": "@site/docs/tutorial-lampod-basics/basic-configuration.md",
+              "sourceDirName": "tutorial-lampod-basics",
+              "slug": "/tutorial-lampod-basics/basic-configuration",
+              "permalink": "/docs/tutorial-lampod-basics/basic-configuration",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-lampod-basics/basic-configuration.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Lampo Lightning Node - Basics",
+                "permalink": "/docs/category/lampo-lightning-node---basics"
+              },
+              "next": {
+                "title": "Swap Bitcoin Node with Nakamoto",
+                "permalink": "/docs/tutorial-lampod-basics/configure-bitcoin-backend"
+              }
+            },
+            {
+              "unversionedId": "tutorial-lampod-basics/configure-bitcoin-backend",
+              "id": "tutorial-lampod-basics/configure-bitcoin-backend",
+              "title": "Swap Bitcoin Node with Nakamoto",
+              "description": "TODO: this requires work work",
+              "source": "@site/docs/tutorial-lampod-basics/configure-bitcoin-backend.md",
+              "sourceDirName": "tutorial-lampod-basics",
+              "slug": "/tutorial-lampod-basics/configure-bitcoin-backend",
+              "permalink": "/docs/tutorial-lampod-basics/configure-bitcoin-backend",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-lampod-basics/configure-bitcoin-backend.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "LampoD Basic configuration",
+                "permalink": "/docs/tutorial-lampod-basics/basic-configuration"
+              },
+              "next": {
+                "title": "Understand How to Configure Lampo",
+                "permalink": "/docs/tutorial-lampod-basics/how-to-configure"
+              }
+            },
+            {
+              "unversionedId": "tutorial-lampod-basics/how-to-configure",
+              "id": "tutorial-lampod-basics/how-to-configure",
+              "title": "Understand How to Configure Lampo",
+              "description": "TODO: this require more work",
+              "source": "@site/docs/tutorial-lampod-basics/how-to-configure.md",
+              "sourceDirName": "tutorial-lampod-basics",
+              "slug": "/tutorial-lampod-basics/how-to-configure",
+              "permalink": "/docs/tutorial-lampod-basics/how-to-configure",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-lampod-basics/how-to-configure.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Swap Bitcoin Node with Nakamoto",
+                "permalink": "/docs/tutorial-lampod-basics/configure-bitcoin-backend"
+              },
+              "next": {
+                "title": "How to Use Lampo Deamon",
+                "permalink": "/docs/tutorial-lampod-basics/how-to-use"
+              }
+            },
+            {
+              "unversionedId": "tutorial-lampod-basics/how-to-contribute",
+              "id": "tutorial-lampod-basics/how-to-contribute",
+              "title": "How to contribute",
+              "description": "TODO: still working in progress",
+              "source": "@site/docs/tutorial-lampod-basics/how-to-contribute.md",
+              "sourceDirName": "tutorial-lampod-basics",
+              "slug": "/tutorial-lampod-basics/how-to-contribute",
+              "permalink": "/docs/tutorial-lampod-basics/how-to-contribute",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-lampod-basics/how-to-contribute.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "How to Use Lampo Deamon",
+                "permalink": "/docs/tutorial-lampod-basics/how-to-use"
+              }
+            },
+            {
+              "unversionedId": "tutorial-lampod-basics/how-to-use",
+              "id": "tutorial-lampod-basics/how-to-use",
+              "title": "How to Use Lampo Deamon",
+              "description": "TODO: describe how to use lampo deamon",
+              "source": "@site/docs/tutorial-lampod-basics/how-to-use.md",
+              "sourceDirName": "tutorial-lampod-basics",
+              "slug": "/tutorial-lampod-basics/how-to-use",
+              "permalink": "/docs/tutorial-lampod-basics/how-to-use",
+              "draft": false,
+              "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tutorial-lampod-basics/how-to-use.md",
+              "tags": [],
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Understand How to Configure Lampo",
+                "permalink": "/docs/tutorial-lampod-basics/how-to-configure"
+              },
+              "next": {
+                "title": "How to contribute",
+                "permalink": "/docs/tutorial-lampod-basics/how-to-contribute"
+              }
+            }
+          ],
+          "drafts": [],
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "intro"
+              },
+              {
+                "type": "category",
+                "label": "Lampo Lightning Node - Basics",
+                "collapsible": true,
+                "collapsed": true,
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "tutorial-lampod-basics/basic-configuration"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-lampod-basics/configure-bitcoin-backend"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-lampod-basics/how-to-configure"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-lampod-basics/how-to-use"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "tutorial-lampod-basics/how-to-contribute"
+                  }
+                ],
+                "link": {
+                  "type": "generated-index",
+                  "slug": "/category/lampo-lightning-node---basics",
+                  "permalink": "/docs/category/lampo-lightning-node---basics"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogSidebarTitle": "Recent posts",
+      "blogPosts": [
+        {
+          "id": "welcome",
+          "metadata": {
+            "permalink": "/blog/welcome",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2023-09-22-welcome/index.md",
+            "source": "@site/blog/2023-09-22-welcome/index.md",
+            "title": "Welcome",
+            "description": "Hello to the Lightning and Bitcoin communities!",
+            "date": "2023-09-22T00:00:00.000Z",
+            "formattedDate": "September 22, 2023",
+            "tags": [
+              {
+                "label": "lampo",
+                "permalink": "/blog/tags/lampo"
+              },
+              {
+                "label": "lightning-network",
+                "permalink": "/blog/tags/lightning-network"
+              }
+            ],
+            "readingTime": 1.23,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Vincenzo Palazzo",
+                "title": "Maintainer of lampo",
+                "url": "https://github.com/vincenzopalazzo",
+                "imageURL": "https://avatars.githubusercontent.com/u/17150045?v=4",
+                "key": "vincenzopalazzo"
+              }
+            ],
+            "frontMatter": {
+              "slug": "welcome",
+              "title": "Welcome",
+              "authors": [
+                "vincenzopalazzo"
+              ],
+              "tags": [
+                "lampo",
+                "lightning-network"
+              ]
+            }
+          },
+          "content": "Hello to the Lightning and Bitcoin communities!\n\nWe're thrilled to introduce **Lampo**, our open-source lightning node implementation crafted meticulously \nin Rust. As technology enthusiasts deeply entrenched in the world of Bitcoin and \nits associated technologies, we noticed a space for an alternative. A space for something robust, transparent, and community-driven. That’s where Lampo steps in.\n\n## Why Lampo?\n\nWhile there are renowned lightning implementations like core lightning, lnd, and eclair, none resonated \nwith our vision for an open-source lightning node built upon the [ldk](https://github.com/lightningdevkit/rust-lightning). Our goal is to \noffer a platform that's not just driven by business needs but also by genuine innovation and community feedback.\n\n## Unique Features\n\nLampo boasts features like swappable APIs, on-chain data sources, and a flexible wallet system. \nAnd yes, we’re future-ready! Plans are already underway to support Fedimint, LSP, and VLS. Our dedication towards \ncreating a powerful architecture will ensure Lampo serves all the needs of the modern lightning network community.\n\n## Join the Conversation\n\nDetermined to maintain clarity, we’ve chosen specific channels for communication:\n- Developers, join us on [Zulip](https://lampo-dev.zulipchat.com/).\n- Community members, our [Reddit community](https://www.reddit.com/r/lampoln/) awaits your insights.\n- For technical questions and feature requests, dive into our GitHub discussions.\n\n## In Conclusion\n\nLampo is more than just software; it's a movement. A movement towards better, more transparent, and community-centric lightning node \ntechnology. We're excited for you to join us on this journey, contribute, question, and help us shape the future of the Lightning Network.\n\nStay electrified!\n\nVincent."
+        }
+      ],
+      "blogListPaginated": [
+        {
+          "items": [
+            "welcome"
+          ],
+          "metadata": {
+            "permalink": "/blog",
+            "page": 1,
+            "postsPerPage": 10,
+            "totalPages": 1,
+            "totalCount": 1,
+            "blogDescription": "Blog",
+            "blogTitle": "Blog"
+          }
+        }
+      ],
+      "blogTags": {
+        "/blog/tags/lampo": {
+          "label": "lampo",
+          "items": [
+            "welcome"
+          ],
+          "permalink": "/blog/tags/lampo",
+          "pages": [
+            {
+              "items": [
+                "welcome"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/lampo",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        },
+        "/blog/tags/lightning-network": {
+          "label": "lightning-network",
+          "items": [
+            "welcome"
+          ],
+          "permalink": "/blog/tags/lightning-network",
+          "pages": [
+            {
+              "items": [
+                "welcome"
+              ],
+              "metadata": {
+                "permalink": "/blog/tags/lightning-network",
+                "page": 1,
+                "postsPerPage": 10,
+                "totalPages": 1,
+                "totalCount": 1,
+                "blogDescription": "Blog",
+                "blogTitle": "Blog"
+              }
+            }
+          ]
+        }
+      },
+      "blogTagsListPath": "/blog/tags"
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {},
+  "docusaurus-theme-classic": {},
+  "docusaurus-bootstrap-plugin": {},
+  "docusaurus-mdx-fallback-plugin": {}
+}
