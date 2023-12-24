@@ -1,0 +1,49 @@
+{
+  "permalink": "/blog/testing",
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2023-10-28-testing/index.md",
+  "source": "@site/blog/2023-10-28-testing/index.md",
+  "title": "Vertical Integration Testing vs Self-Integration Testing",
+  "description": "Hi,",
+  "date": "2023-10-28T00:00:00.000Z",
+  "formattedDate": "October 28, 2023",
+  "tags": [
+    {
+      "label": "lampo",
+      "permalink": "/blog/tags/lampo"
+    },
+    {
+      "label": "lightning-network",
+      "permalink": "/blog/tags/lightning-network"
+    }
+  ],
+  "readingTime": 1.815,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Vincenzo Palazzo",
+      "title": "Maintainer of lampo",
+      "url": "https://github.com/vincenzopalazzo",
+      "imageURL": "https://avatars.githubusercontent.com/u/17150045?v=4",
+      "key": "vincenzopalazzo"
+    }
+  ],
+  "frontMatter": {
+    "slug": "testing",
+    "title": "Vertical Integration Testing vs Self-Integration Testing",
+    "authors": [
+      "vincenzopalazzo"
+    ],
+    "tags": [
+      "lampo",
+      "lightning-network"
+    ]
+  },
+  "prevItem": {
+    "title": "Lampo v23.12",
+    "permalink": "/blog/v23.12"
+  },
+  "nextItem": {
+    "title": "Welcome",
+    "permalink": "/blog/welcome"
+  }
+}

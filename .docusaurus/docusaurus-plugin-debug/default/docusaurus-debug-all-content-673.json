@@ -15,9 +15,9 @@
           "editUrlLocalized": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/i18n/en/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "/home/vincent/gittea/lampo.docs/sidebars.js",
-          "contentPath": "/home/vincent/gittea/lampo.docs/docs",
-          "contentPathLocalized": "/home/vincent/gittea/lampo.docs/i18n/en/docusaurus-plugin-content-docs/current",
+          "sidebarFilePath": "/home/vincent/gittea/work/lampo.docs/sidebars.js",
+          "contentPath": "/home/vincent/gittea/work/lampo.docs/docs",
+          "contentPathLocalized": "/home/vincent/gittea/work/lampo.docs/i18n/en/docusaurus-plugin-content-docs/current",
           "docs": [
             {
               "unversionedId": "intro",
@@ -227,6 +227,108 @@
       "blogSidebarTitle": "Recent posts",
       "blogPosts": [
         {
+          "id": "v23.12",
+          "metadata": {
+            "permalink": "/blog/v23.12",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2023-12-24-v23.12-beta.1/index.mdx",
+            "source": "@site/blog/2023-12-24-v23.12-beta.1/index.mdx",
+            "title": "Lampo v23.12",
+            "description": "First of all, Merry Christmas!",
+            "date": "2023-12-24T00:00:00.000Z",
+            "formattedDate": "December 24, 2023",
+            "tags": [
+              {
+                "label": "lampo",
+                "permalink": "/blog/tags/lampo"
+              },
+              {
+                "label": "lightning-network",
+                "permalink": "/blog/tags/lightning-network"
+              }
+            ],
+            "readingTime": 2.585,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Vincenzo Palazzo",
+                "title": "Maintainer of lampo",
+                "url": "https://github.com/vincenzopalazzo",
+                "imageURL": "https://avatars.githubusercontent.com/u/17150045?v=4",
+                "key": "vincenzopalazzo"
+              }
+            ],
+            "frontMatter": {
+              "slug": "v23.12",
+              "title": "Lampo v23.12",
+              "authors": [
+                "vincenzopalazzo"
+              ],
+              "tags": [
+                "lampo",
+                "lightning-network"
+              ]
+            },
+            "nextItem": {
+              "title": "Vertical Integration Testing vs Self-Integration Testing",
+              "permalink": "/blog/testing"
+            }
+          },
+          "content": "First of all, Merry Christmas!\n\nIn my free time, I have been working on a lightning node using LDK, which I've named Lampo (Italian for lightning), for more than 1.5 years.\n\nThe initial draft was developed as a toy lightning node to support lnprototest [1] for LDK. During its development, I realized I was nearing the completion of a small, self-contained SDK for building a lightning node with LDK. So, in March, I decided to take a shot at implementing a full node using the Lampo SDK.\n\nI have currently supported the first basic commands listed in the following part of the code [2] (admittedly, it's not ideal, but a help command is on the way), and things seem to be working. I am also close to having integration tests between c-lightning (cln) and Lampo, in addition to including lnprototest protocol tests.\n\nHoping to attract users and contributors, I am excited to release the first public beta version v23.12 today and begin receiving initial feedback on features most desired by the community. However, I cannot promise that I will implement them all—though patches are certainly welcome, of course.\n\n## Small Real Life Example\n\n**!!PLEASE DO NOT USE THIS ON MAINET!!**\n\nCurrently, Lampo only supports Bitcoin Core as a backend and utilizes a core wallet, so we do not have a separate wallet but derive one from a BIP 39 seed.\n\nWhen you install Lampo on your machine and run lampod-cli for the first time, the BIP 39 words will be printed in your terminal:\n\n```\n➜  ~ lampod-cli --network-signet\n✓ Wallet Generated, please store this words in a safe place/way\n waller-keys  maple have fitness decide food joy flame coast stereo front grab stumble\n```\n\nThen, each time you restart the node, you will need to input the words using --restore-wallet:\n\n```\n➜  ~ lampod-cli --network-signet --restore-wallet \"maple have fitness decide food joy flame coast stereo front grab stumble\"\n```\n\nTo view your node's information, execute:\n\n```\n➜  ~ lampo-cli --network signet getinfo\n{\n  \"node_id\": \"039406c61582cc7a1282eda1c59c73fc3fa97cab1057e215136e35d5dd0c98c981\",\n  \"peers\": 0,\n  \"channels\": 0\n}\n```\n\nNow, you can open a new channel with one of our Lampo lightning nodes hosted on Signet:\n\n```\n➜  ~ lampo-cli --network signet connect --node_id 03cdc5ce9df1e05653a1f2db9e29bad1a1c81940315dd16e66216803aac07423aa --addr 65.108.246.14 --port 39736\n{\n  \"port\": 39736,\n  \"node_id\": \"03cdc5ce9df1e05653a1f2db9e29bad1a1c81940315dd16e66216803aac07423aa\",\n  \"addr\": \"65.108.246.14\"\n}\n```\n\nThen, open a new channel:\n\n```\nlampo-cli --network signet fundchannel --node_id 03cdc5ce9df1e05653a1f2db9e29bad1a1c81940315dd16e66216803aac07423aa \\\n          --addr 65.108.246.14 --port 39736  --amount 10000 --public true\n```\n\nFor now, you'll need to monitor the logs for possible errors during the channel opening process, but we are working to streamline this soon.\n\nTo check if your channel is ready for use or to explore other channels, you can run:\n\n```\n➜  ~ lampo-cli --network signet channels\n{\n  \"channels\": [\n    {\n      \"short_channel_id\": null,\n      \"peer_id\": \"026b92e6cc3e0f24b42494672ecf65f3d147b9deb95186bf024da7a7745008ee75\",\n      \"peer_alias\": null,\n      \"ready\": false,\n      \"amount_satoshis\": 100000,\n      \"amount_msat\": 96634000,\n      \"public\": true,\n      \"available_balance_for_send_msat\": 99000000,\n      \"available_balance_for_recv_msat\": 0\n    }\n  ]\n}\n```\n\nYou can make a payment using the keysend or pay command. See the code for more details :) or join our Twitter community [3], where you can ask any questions you may have.\n\n[1] https://github.com/rustyrussell/lnprototest\n[2] https://github.com/vincenzopalazzo/lampo.rs/blob/main/lampod-cli/src/main.rs#L175-L181\n[3] https://twitter.com/i/communities/1736414802849706087\n\nCheers,\n\nVincent."
+        },
+        {
+          "id": "testing",
+          "metadata": {
+            "permalink": "/blog/testing",
+            "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/blog/2023-10-28-testing/index.md",
+            "source": "@site/blog/2023-10-28-testing/index.md",
+            "title": "Vertical Integration Testing vs Self-Integration Testing",
+            "description": "Hi,",
+            "date": "2023-10-28T00:00:00.000Z",
+            "formattedDate": "October 28, 2023",
+            "tags": [
+              {
+                "label": "lampo",
+                "permalink": "/blog/tags/lampo"
+              },
+              {
+                "label": "lightning-network",
+                "permalink": "/blog/tags/lightning-network"
+              }
+            ],
+            "readingTime": 1.815,
+            "hasTruncateMarker": false,
+            "authors": [
+              {
+                "name": "Vincenzo Palazzo",
+                "title": "Maintainer of lampo",
+                "url": "https://github.com/vincenzopalazzo",
+                "imageURL": "https://avatars.githubusercontent.com/u/17150045?v=4",
+                "key": "vincenzopalazzo"
+              }
+            ],
+            "frontMatter": {
+              "slug": "testing",
+              "title": "Vertical Integration Testing vs Self-Integration Testing",
+              "authors": [
+                "vincenzopalazzo"
+              ],
+              "tags": [
+                "lampo",
+                "lightning-network"
+              ]
+            },
+            "prevItem": {
+              "title": "Lampo v23.12",
+              "permalink": "/blog/v23.12"
+            },
+            "nextItem": {
+              "title": "Welcome",
+              "permalink": "/blog/welcome"
+            }
+          },
+          "content": "Hi,\n\nIn this post, we describe how we are testing our lightning node implementation and how we are integrating the [Lightning Network Interoperability Initiative](https://lnspec-tools.github.io/ln-interoperability-initiative/CHARTER.html#lightning-network-interoperability-initiative-charter) into our development.\n\nDifferent kinds of integration testing\nBefore start describe how we implement our integration testing, we need to introduce the definition of Vertical Integration Testing and Self Integration Testing.\n\nFrom Lightning Network Interoperability Initiative we find the definition:\n\n- Vertical Integration Testing: An implementation must be tested alongside other implementations.\n- Self-Integration Testing: An implementation must be tested for compliance with its own standards (note: most major implementations are currently doing this).\n\nSo in this post, we describe how we choose to develop our integration testing and what kind of results there are to bring to us.\n\nLampo Node Integration testing\nLampo is built with LDK which mean that we already have a tested library with a self-integration test, but this do not make us safe from bug.\n\nIn fact, an LDK node is required to implement a sequence of workflows to manage events and interact with external systems while an event is received or generated. This can introduce bugs and can lead us to strange bugs that are not happening on LDK integration testing. Another important source of bugs is the integration with other implementations.\n\nTo solve this problem and deploy a safer lightning node implementation, we are going to write a sequence of integration tests with the tool provided by the Lightning Network Interoperability Initiative and write a basic integration test between lampo and a core lightning node.\n\nWhat we have found\nWhile writing this test required a big amount of work, we also had some security checks when we were migrating lampo to a new version of ldk or when we needed to reproduce a bug that happened with some specific version of core lightning.\n\nRecently we were upgrading Lampo to a new version of LDK, and we noted that our payments from lampo to Core Lightning were failing. We found that something was wrong between LDK and core lightning and we are investigating this issue.\n\nTo read more about this issue or to help us please join our [zulip dev channel](https://lampo-dev.zulipchat.com/join/fk3kd7btbyoiqrfmveblz2kr)\n\nCheers,\n\nVincent."
+        },
+        {
           "id": "welcome",
           "metadata": {
             "permalink": "/blog/welcome",
@@ -267,6 +369,10 @@
                 "lampo",
                 "lightning-network"
               ]
+            },
+            "prevItem": {
+              "title": "Vertical Integration Testing vs Self-Integration Testing",
+              "permalink": "/blog/testing"
             }
           },
           "content": "Hello to the Lightning and Bitcoin communities!\n\nWe're thrilled to introduce **Lampo**, our open-source lightning node implementation crafted meticulously \nin Rust. As technology enthusiasts deeply entrenched in the world of Bitcoin and \nits associated technologies, we noticed a space for an alternative. A space for something robust, transparent, and community-driven. That’s where Lampo steps in.\n\n## Why Lampo?\n\nWhile there are renowned lightning implementations like core lightning, lnd, and eclair, none resonated \nwith our vision for an open-source lightning node built upon the [ldk](https://github.com/lightningdevkit/rust-lightning). Our goal is to \noffer a platform that's not just driven by business needs but also by genuine innovation and community feedback.\n\n## Unique Features\n\nLampo boasts features like swappable APIs, on-chain data sources, and a flexible wallet system. \nAnd yes, we’re future-ready! Plans are already underway to support Fedimint, LSP, and VLS. Our dedication towards \ncreating a powerful architecture will ensure Lampo serves all the needs of the modern lightning network community.\n\n## Join the Conversation\n\nDetermined to maintain clarity, we’ve chosen specific channels for communication:\n- Developers, join us on [Zulip](https://lampo-dev.zulipchat.com/).\n- Community members, our [Reddit community](https://www.reddit.com/r/lampoln/) awaits your insights.\n- For technical questions and feature requests, dive into our GitHub discussions.\n\n## In Conclusion\n\nLampo is more than just software; it's a movement. A movement towards better, more transparent, and community-centric lightning node \ntechnology. We're excited for you to join us on this journey, contribute, question, and help us shape the future of the Lightning Network.\n\nStay electrified!\n\nVincent."
@@ -275,6 +381,8 @@
       "blogListPaginated": [
         {
           "items": [
+            "v23.12",
+            "testing",
             "welcome"
           ],
           "metadata": {
@@ -282,7 +390,7 @@
             "page": 1,
             "postsPerPage": 10,
             "totalPages": 1,
-            "totalCount": 1,
+            "totalCount": 3,
             "blogDescription": "Blog",
             "blogTitle": "Blog"
           }
@@ -292,12 +400,16 @@
         "/blog/tags/lampo": {
           "label": "lampo",
           "items": [
+            "v23.12",
+            "testing",
             "welcome"
           ],
           "permalink": "/blog/tags/lampo",
           "pages": [
             {
               "items": [
+                "v23.12",
+                "testing",
                 "welcome"
               ],
               "metadata": {
@@ -305,7 +417,7 @@
                 "page": 1,
                 "postsPerPage": 10,
                 "totalPages": 1,
-                "totalCount": 1,
+                "totalCount": 3,
                 "blogDescription": "Blog",
                 "blogTitle": "Blog"
               }
@@ -315,12 +427,16 @@
         "/blog/tags/lightning-network": {
           "label": "lightning-network",
           "items": [
+            "v23.12",
+            "testing",
             "welcome"
           ],
           "permalink": "/blog/tags/lightning-network",
           "pages": [
             {
               "items": [
+                "v23.12",
+                "testing",
                 "welcome"
               ],
               "metadata": {
@@ -328,7 +444,7 @@
                 "page": 1,
                 "postsPerPage": 10,
                 "totalPages": 1,
-                "totalCount": 1,
+                "totalCount": 3,
                 "blogDescription": "Blog",
                 "blogTitle": "Blog"
               }

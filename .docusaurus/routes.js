@@ -3,73 +3,48 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 
 export default [
   {
-    path: '/__docusaurus/debug',
-    component: ComponentCreator('/__docusaurus/debug', 'fe2'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/config',
-    component: ComponentCreator('/__docusaurus/debug/config', 'c0a'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/content',
-    component: ComponentCreator('/__docusaurus/debug/content', 'fa8'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/globalData',
-    component: ComponentCreator('/__docusaurus/debug/globalData', '335'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/metadata',
-    component: ComponentCreator('/__docusaurus/debug/metadata', '790'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/registry',
-    component: ComponentCreator('/__docusaurus/debug/registry', '01f'),
-    exact: true
-  },
-  {
-    path: '/__docusaurus/debug/routes',
-    component: ComponentCreator('/__docusaurus/debug/routes', '7ea'),
-    exact: true
-  },
-  {
     path: '/blog',
-    component: ComponentCreator('/blog', '48e'),
+    component: ComponentCreator('/blog', 'c20'),
     exact: true
   },
   {
     path: '/blog/archive',
-    component: ComponentCreator('/blog/archive', 'b73'),
+    component: ComponentCreator('/blog/archive', '1fd'),
     exact: true
   },
   {
     path: '/blog/tags',
-    component: ComponentCreator('/blog/tags', '45a'),
+    component: ComponentCreator('/blog/tags', '454'),
     exact: true
   },
   {
     path: '/blog/tags/lampo',
-    component: ComponentCreator('/blog/tags/lampo', 'c78'),
+    component: ComponentCreator('/blog/tags/lampo', '0c6'),
     exact: true
   },
   {
     path: '/blog/tags/lightning-network',
-    component: ComponentCreator('/blog/tags/lightning-network', '9dd'),
+    component: ComponentCreator('/blog/tags/lightning-network', 'fc3'),
+    exact: true
+  },
+  {
+    path: '/blog/testing',
+    component: ComponentCreator('/blog/testing', '332'),
+    exact: true
+  },
+  {
+    path: '/blog/v23.12',
+    component: ComponentCreator('/blog/v23.12', '4a0'),
     exact: true
   },
   {
     path: '/blog/welcome',
-    component: ComponentCreator('/blog/welcome', 'ca2'),
+    component: ComponentCreator('/blog/welcome', 'e88'),
     exact: true
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'f66'),
+    component: ComponentCreator('/docs', '990'),
     routes: [
       {
         path: '/docs/category/lampo-lightning-node---basics',
@@ -117,7 +92,7 @@ export default [
   },
   {
     path: '/',
-    component: ComponentCreator('/', 'e6d'),
+    component: ComponentCreator('/', '56a'),
     exact: true
   },
   {

@@ -1,0 +1,102 @@
+---
+slug: "v23.12"
+title: "Lampo v23.12"
+authors: [vincenzopalazzo]
+tags: [lampo, lightning-network]
+---
+
+# Lampo Lightning Node v23.12
+
+First of all, Merry Christmas!
+
+In my free time, I have been working on a lightning node using LDK, which I've named Lampo (Italian for lightning), for more than 1.5 years.
+
+The initial draft was developed as a toy lightning node to support lnprototest [1] for LDK. During its development, I realized I was nearing the completion of a small, self-contained SDK for building a lightning node with LDK. So, in March, I decided to take a shot at implementing a full node using the Lampo SDK.
+
+I have currently supported the first basic commands listed in the following part of the code [2] (admittedly, it's not ideal, but a help command is on the way), and things seem to be working. I am also close to having integration tests between c-lightning (cln) and Lampo, in addition to including lnprototest protocol tests.
+
+Hoping to attract users and contributors, I am excited to release the first public beta version v23.12 today and begin receiving initial feedback on features most desired by the community. However, I cannot promise that I will implement them all—though patches are certainly welcome, of course.
+
+## Small Real Life Example
+
+**!!PLEASE DO NOT USE THIS ON MAINET!!**
+
+Currently, Lampo only supports Bitcoin Core as a backend and utilizes a core wallet, so we do not have a separate wallet but derive one from a BIP 39 seed.
+
+When you install Lampo on your machine and run lampod-cli for the first time, the BIP 39 words will be printed in your terminal:
+
+```
+➜  ~ lampod-cli --network-signet
+✓ Wallet Generated, please store this words in a safe place/way
+ waller-keys  maple have fitness decide food joy flame coast stereo front grab stumble
+```
+
+Then, each time you restart the node, you will need to input the words using --restore-wallet:
+
+```
+➜  ~ lampod-cli --network-signet --restore-wallet "maple have fitness decide food joy flame coast stereo front grab stumble"
+```
+
+To view your node's information, execute:
+
+```
+➜  ~ lampo-cli --network signet getinfo
+{
+  "node_id": "039406c61582cc7a1282eda1c59c73fc3fa97cab1057e215136e35d5dd0c98c981",
+  "peers": 0,
+  "channels": 0
+}
+```
+
+Now, you can open a new channel with one of our Lampo lightning nodes hosted on Signet:
+
+```
+➜  ~ lampo-cli --network signet connect --node_id 03cdc5ce9df1e05653a1f2db9e29bad1a1c81940315dd16e66216803aac07423aa --addr 65.108.246.14 --port 39736
+{
+  "port": 39736,
+  "node_id": "03cdc5ce9df1e05653a1f2db9e29bad1a1c81940315dd16e66216803aac07423aa",
+  "addr": "65.108.246.14"
+}
+```
+
+Then, open a new channel:
+
+```
+lampo-cli --network signet fundchannel --node_id 03cdc5ce9df1e05653a1f2db9e29bad1a1c81940315dd16e66216803aac07423aa \
+          --addr 65.108.246.14 --port 39736  --amount 10000 --public true
+```
+
+For now, you'll need to monitor the logs for possible errors during the channel opening process, but we are working to streamline this soon.
+
+To check if your channel is ready for use or to explore other channels, you can run:
+
+```
+➜  ~ lampo-cli --network signet channels
+{
+  "channels": [
+    {
+      "short_channel_id": null,
+      "peer_id": "026b92e6cc3e0f24b42494672ecf65f3d147b9deb95186bf024da7a7745008ee75",
+      "peer_alias": null,
+      "ready": false,
+      "amount_satoshis": 100000,
+      "amount_msat": 96634000,
+      "public": true,
+      "available_balance_for_send_msat": 99000000,
+      "available_balance_for_recv_msat": 0
+    }
+  ]
+}
+```
+
+You can make a payment using the keysend or pay command. See the code for more details :) or join our Twitter community [3], where you can ask any questions you may have.
+
+[1] https://github.com/rustyrussell/lnprototest
+
+[2] https://github.com/vincenzopalazzo/lampo.rs/blob/main/lampod-cli/src/main.rs#L175-L181
+
+[3] https://twitter.com/i/communities/1736414802849706087
+
+Cheers,
+
+Vincent.
