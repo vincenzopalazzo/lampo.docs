@@ -2,6 +2,14 @@
   "title": "Recent posts",
   "items": [
     {
+      "title": "Lampo v23.12",
+      "permalink": "/blog/v23.12"
+    },
+    {
+      "title": "Vertical Integration Testing vs Self-Integration Testing",
+      "permalink": "/blog/testing"
+    },
+    {
       "title": "Welcome",
       "permalink": "/blog/welcome"
     }

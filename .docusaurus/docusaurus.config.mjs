@@ -26,7 +26,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/home/vincent/gittea/lampo.docs/sidebars.js",
+          "sidebarPath": "/home/vincent/gittea/work/lampo.docs/sidebars.js",
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "blog": {
@@ -34,7 +34,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
-          "customCss": "/home/vincent/gittea/lampo.docs/src/css/custom.css"
+          "customCss": "/home/vincent/gittea/work/lampo.docs/src/css/custom.css"
         }
       }
     ]

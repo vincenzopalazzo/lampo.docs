@@ -58,17 +58,19 @@ From a user's perspective, there are two primary components: `lampod-cli` (a com
 and `lampo-cli` (a command line tool for interacting with the node).
 
 The `lampod-cli` employs the Lampo SDK to construct a lightning node equipped with both a Wallet and a Blockchain Data Source. It accepts
- a runtime flag `--config <path-of-the-datadir-root>`, instructing the daemon where to look for a configuration file. As the product is still in
-  its early stages, the Lampo daemon currently expects a configuration file named `lampod.conf` at the root of the specified directory.
+ a runtime flag `--data-dir <path-of-the-datadir-root>` (by default is ~/.lampo), instructing the daemon where to look for a configuration file that should be placed under the network directory. As the product is still in
+  its early stages, the Lampo daemon currently expects a configuration file named `lampod.conf` at the `<root-lampo-dir>/<network>/lampo.conf`.
 
 Here's an example of a basic configuration file:
 ```
-backend=core
 core-url=http://127.0.0.1:38332
 core-user=vincent
-core-pass=vincent
+core-pass=vincent-lampo
+log-level=trace
+log-file=/home/vincent/.lampo/signet/log.log
 
 network=signet
+# where to listen about p2p connections
 port=39736
 ```
 
@@ -77,7 +79,7 @@ To run the Lampo daemon with the configuration file located at `~/.lampo/signet/
 > **Note**: Before running `lampod`, ensure that Bitcoin Core is already running. Additionally, `lampod` utilizes Bitcoin Core as its wallet.
 
 ```bash
-lampod-cli --config ~/.lampo/signet
+lampod-cli --network signet
 ```
 
 Upon starting the node, it will display the BIP 39 seed phrase on the terminal for wallet restoration purposes. If you 
@@ -85,7 +87,7 @@ wish to restore the wallet later, use the following command:
 
 
 ```bash
-lampod-cli --config ~/.lampo/signet --restore-wallet "<seed words>"
+lampod-cli --network signet --restore-wallet "<seed words>"
 ```
 
 Once the node is up and running, you can open a separate terminal and use `lampo-cli` to interact 
@@ -93,7 +95,7 @@ with the daemon. To retrieve information using the `getinfo` function, execute t
 
 
 ```bash
-lampo-cli --socket ~/.lampo/signet/lampod.socket getinfo
+lampo-cli --network signet getinfo
 ```
 
 ## Compatibility with the Protocol

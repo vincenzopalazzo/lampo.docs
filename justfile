@@ -1,7 +1,5 @@
 CC := "bun"
 
-ARGS := ""
-
 default:
 	{{CC}} run start
 
@@ -16,3 +14,9 @@ check:
 
 clean:
 	{{CC}} clean
+
+build:
+    {{CC}} run build
+
+deploy args="": build
+    {{CC}} run netlify deploy {{args}}

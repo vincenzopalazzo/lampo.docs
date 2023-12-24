@@ -1,151 +1,142 @@
 {
-  "/__docusaurus/debug-fe2": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
+  "/blog-c20": {
+    "__comp": "a6aa9e1f",
     "__context": {
-      "plugin": "plugin---docusaurus-debug-80-f-250"
-    }
-  },
-  "/__docusaurus/debug/config-c0a": {
-    "__comp": "__comp---theme-debug-config-23-a-2ff",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-80-f-250"
-    }
-  },
-  "/__docusaurus/debug/content-fa8": {
-    "__comp": "__comp---theme-debug-contentba-8-ce7",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-80-f-250"
+      "plugin": "1aa53c6c"
     },
-    "allContent": "allContent---docusaurus-debug-content-246-9aa"
-  },
-  "/__docusaurus/debug/globalData-335": {
-    "__comp": "__comp---theme-debug-global-dataede-0fa",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-80-f-250"
-    }
-  },
-  "/__docusaurus/debug/metadata-790": {
-    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-80-f-250"
-    }
-  },
-  "/__docusaurus/debug/registry-01f": {
-    "__comp": "__comp---theme-debug-registry-679-501",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-80-f-250"
-    }
-  },
-  "/__docusaurus/debug/routes-7ea": {
-    "__comp": "__comp---theme-debug-routes-946-699",
-    "__context": {
-      "plugin": "plugin---docusaurus-debug-80-f-250"
-    }
-  },
-  "/blog-48e": {
-    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
-    "__context": {
-      "plugin": "plugin---blogf-0-f-9d7"
-    },
-    "sidebar": "sidebar---blog-814-8ac",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blog-24-e-486"
+        "content": "e253883a"
+      },
+      {
+        "content": "05c763bb"
+      },
+      {
+        "content": "24e8c1df"
       }
     ],
-    "metadata": "metadata---blogb-2-b-df1"
+    "metadata": "b2b675dd"
   },
-  "/blog/archive-b73": {
-    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
+  "/blog/archive-1fd": {
+    "__comp": "9e4087bc",
     "__context": {
-      "plugin": "plugin---blogf-0-f-9d7"
+      "plugin": "1aa53c6c"
     },
-    "archive": "archive---blog-archiveb-2-f-393"
+    "archive": "b2f554cd"
   },
-  "/blog/tags-45a": {
-    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
+  "/blog/tags-454": {
+    "__comp": "01a85c17",
     "__context": {
-      "plugin": "plugin---blogf-0-f-9d7"
+      "plugin": "1aa53c6c"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "tags": "tags---blog-tagsa-70-da2"
+    "sidebar": "814f3328",
+    "tags": "a7023ddc"
   },
-  "/blog/tags/lampo-c78": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+  "/blog/tags/lampo-0c6": {
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---blogf-0-f-9d7"
+      "plugin": "1aa53c6c"
     },
-    "sidebar": "sidebar---blog-814-8ac",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blog-24-e-486"
+        "content": "e253883a"
+      },
+      {
+        "content": "05c763bb"
+      },
+      {
+        "content": "24e8c1df"
       }
     ],
-    "tag": "tag---blog-tags-lampo-2-a-4-688",
-    "listMetadata": "listMetadata---blog-tags-lampof-0-c-d7b"
+    "tag": "2a4ddcb9",
+    "listMetadata": "f0c3140e"
   },
-  "/blog/tags/lightning-network-9dd": {
-    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
+  "/blog/tags/lightning-network-fc3": {
+    "__comp": "6875c492",
     "__context": {
-      "plugin": "plugin---blogf-0-f-9d7"
+      "plugin": "1aa53c6c"
     },
-    "sidebar": "sidebar---blog-814-8ac",
+    "sidebar": "814f3328",
     "items": [
       {
-        "content": "content---blog-24-e-486"
+        "content": "e253883a"
+      },
+      {
+        "content": "05c763bb"
+      },
+      {
+        "content": "24e8c1df"
       }
     ],
-    "tag": "tag---blog-tags-lightning-network-823-064",
-    "listMetadata": "listMetadata---blog-tags-lightning-network-3-a-4-720"
+    "tag": "823708ad",
+    "listMetadata": "3a492f23"
   },
-  "/blog/welcome-ca2": {
-    "__comp": "__comp---theme-blog-post-pageccc-cab",
+  "/blog/testing-332": {
+    "__comp": "ccc49370",
     "__context": {
-      "plugin": "plugin---blogf-0-f-9d7"
+      "plugin": "1aa53c6c"
     },
-    "sidebar": "sidebar---blog-814-8ac",
-    "content": "content---blog-welcome-6-e-8-a1c"
+    "sidebar": "814f3328",
+    "content": "69b00f43"
   },
-  "/docs-f66": {
-    "__comp": "__comp---theme-doc-page-1-be-9be",
+  "/blog/v23.12-4a0": {
+    "__comp": "ccc49370",
     "__context": {
-      "plugin": "plugin---docs-0-d-8-2aa"
+      "plugin": "1aa53c6c"
     },
-    "versionMetadata": "versionMetadata---docs-935-398"
+    "sidebar": "814f3328",
+    "content": "ee9a948d"
+  },
+  "/blog/welcome-e88": {
+    "__comp": "ccc49370",
+    "__context": {
+      "plugin": "1aa53c6c"
+    },
+    "sidebar": "814f3328",
+    "content": "6e89966b"
+  },
+  "/docs-990": {
+    "__comp": "1be78505",
+    "__context": {
+      "plugin": "e6f2cdc7"
+    },
+    "versionMetadata": "935f2afb"
   },
   "/docs/category/lampo-lightning-node---basics-5e6": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-lampo-lightning-node-basics-917-de0"
+    "__comp": "14eb3368",
+    "categoryGeneratedIndex": "917d0912"
   },
   "/docs/intro-aed": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-intro-0-e-3-be1"
+    "__comp": "17896441",
+    "content": "0e384e19"
   },
   "/docs/tutorial-lampod-basics/basic-configuration-12e": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-lampod-basics-basic-configuration-8-b-8-f10"
+    "__comp": "17896441",
+    "content": "8b8659a2"
   },
   "/docs/tutorial-lampod-basics/configure-bitcoin-backend-8ec": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-lampod-basics-configure-bitcoin-backendcb-3-dad"
+    "__comp": "17896441",
+    "content": "cb39c905"
   },
   "/docs/tutorial-lampod-basics/how-to-configure-5b6": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-lampod-basics-how-to-configureaf-8-f36"
+    "__comp": "17896441",
+    "content": "af807bfc"
   },
   "/docs/tutorial-lampod-basics/how-to-contribute-c74": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-lampod-basics-how-to-contribute-536-5a2"
+    "__comp": "17896441",
+    "content": "536d1d06"
   },
   "/docs/tutorial-lampod-basics/how-to-use-19a": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-tutorial-lampod-basics-how-to-use-9-a-5-bb6"
+    "__comp": "17896441",
+    "content": "9a5befbc"
   },
-  "/-e6d": {
-    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
+  "/-56a": {
+    "__comp": "c4f5d8e4",
     "__context": {
-      "plugin": "plugin---68-c-5b9"
+      "plugin": "a8e73f9b"
     },
-    "config": "config---5-e-9-4f3"
+    "config": "5e9f5e1a"
   }
 }
