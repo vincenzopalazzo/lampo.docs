@@ -16,7 +16,7 @@
         formatter = pkgs.nixpkgs-fmt;
 
         devShell = pkgs.mkShell {
-          buildInputs = [ pkgs.just pkgs.bun pkgs.nodejs ];
+          buildInputs = [ pkgs.just pkgs.pnpm pkgs.nodejs ];
           buildPhase = "just";
           shellHook = ''
              export CI="false"

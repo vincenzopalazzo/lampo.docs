@@ -26,7 +26,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/home/vincent/gittea/work/lampo.docs/sidebars.js",
+          "sidebarPath": "/Users/vincenzopalazzo/github/work/btc/lampo-workspace/lampo.docs/sidebars.js",
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "blog": {
@@ -34,7 +34,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
-          "customCss": "/home/vincent/gittea/work/lampo.docs/src/css/custom.css"
+          "customCss": "/Users/vincenzopalazzo/github/work/btc/lampo-workspace/lampo.docs/src/css/custom.css"
         }
       }
     ]
@@ -97,7 +97,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2023 Vincenzo Palazzo, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2025 Vincenzo Palazzo, Inc. Built with Docusaurus."
     },
     "prism": {
       "theme": {

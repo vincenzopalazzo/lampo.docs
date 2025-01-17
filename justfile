@@ -1,4 +1,4 @@
-CC := "bun"
+CC := "pnpm"
 
 default:
 	{{CC}} run start
