@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/dark.png',
 
   // Set the production url of your site here
-  url: 'https://lampo.devcrew.c',
+  url: 'https://lampo.devcrew.cc',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -78,8 +78,8 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://git.hedwing.dev/dev-crew/lampo.rs',
-            label: 'Git',
+            href: 'https://github.com/vincenzopalazzo/lampo.rs',
+            label: 'Code',
             position: 'right',
           },
         ],
@@ -100,21 +100,21 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Reddit',
-                href: 'https://www.reddit.com/r/lampoln',
+                label: 'X',
+                href: 'https://x.com/i/communities/1736414802849706087',
               },
               {
-                label: 'Zulip',
-                href: 'https://lampo-dev.zulipchat.com',
+                label: 'Discord',
+                href: 'https://discord.gg/j2QNJHxh8J',
               },
               {
-                label: 'Git',
-                href: 'https://git.hedwing.dev/vincenzopalazzo/lampo.rs',
+                label: 'Code',
+                href: 'https://github.com/vincenzopalazzo/lampo.rs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Vincenzo Palazzo, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Vincenzo Palazzo. Built with love & free time.`,
       },
       prism: {
         theme: lightCodeTheme,
