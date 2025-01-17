@@ -1,142 +1,185 @@
 {
-  "/blog-c20": {
-    "__comp": "a6aa9e1f",
+  "/__docusaurus/debug-936": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "1aa53c6c"
+      "plugin": "plugin---docusaurus-debug-0-fb-12a"
+    }
+  },
+  "/__docusaurus/debug/config-d63": {
+    "__comp": "__comp---theme-debug-config-23-a-2ff",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-0-fb-12a"
+    }
+  },
+  "/__docusaurus/debug/content-3eb": {
+    "__comp": "__comp---theme-debug-contentba-8-ce7",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-0-fb-12a"
     },
-    "sidebar": "814f3328",
+    "allContent": "allContent---docusaurus-debug-content-246-9aa"
+  },
+  "/__docusaurus/debug/globalData-0b2": {
+    "__comp": "__comp---theme-debug-global-dataede-0fa",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-0-fb-12a"
+    }
+  },
+  "/__docusaurus/debug/metadata-39b": {
+    "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-0-fb-12a"
+    }
+  },
+  "/__docusaurus/debug/registry-5b9": {
+    "__comp": "__comp---theme-debug-registry-679-501",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-0-fb-12a"
+    }
+  },
+  "/__docusaurus/debug/routes-01a": {
+    "__comp": "__comp---theme-debug-routes-946-699",
+    "__context": {
+      "plugin": "plugin---docusaurus-debug-0-fb-12a"
+    }
+  },
+  "/blog-c97": {
+    "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
+    "__context": {
+      "plugin": "plugin---blog-3-c-7-f4e"
+    },
+    "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "e253883a"
+        "content": "content---bloge-25-bd2"
       },
       {
-        "content": "05c763bb"
+        "content": "content---blog-05-c-e6e"
       },
       {
-        "content": "24e8c1df"
+        "content": "content---blog-24-e-486"
       }
     ],
-    "metadata": "b2b675dd"
+    "metadata": "metadata---blogb-2-b-df1"
   },
-  "/blog/archive-1fd": {
-    "__comp": "9e4087bc",
+  "/blog/archive-803": {
+    "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
     "__context": {
-      "plugin": "1aa53c6c"
+      "plugin": "plugin---blog-3-c-7-f4e"
     },
-    "archive": "b2f554cd"
+    "archive": "archive---blog-archiveb-2-f-393"
   },
-  "/blog/tags-454": {
-    "__comp": "01a85c17",
+  "/blog/tags-c63": {
+    "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
     "__context": {
-      "plugin": "1aa53c6c"
+      "plugin": "plugin---blog-3-c-7-f4e"
     },
-    "sidebar": "814f3328",
-    "tags": "a7023ddc"
+    "sidebar": "sidebar---blog-814-8ac",
+    "tags": "tags---blog-tagsa-70-da2"
   },
-  "/blog/tags/lampo-0c6": {
-    "__comp": "6875c492",
+  "/blog/tags/lampo-f68": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "1aa53c6c"
+      "plugin": "plugin---blog-3-c-7-f4e"
     },
-    "sidebar": "814f3328",
+    "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "e253883a"
+        "content": "content---bloge-25-bd2"
       },
       {
-        "content": "05c763bb"
+        "content": "content---blog-05-c-e6e"
       },
       {
-        "content": "24e8c1df"
+        "content": "content---blog-24-e-486"
       }
     ],
-    "tag": "2a4ddcb9",
-    "listMetadata": "f0c3140e"
+    "tag": "tag---blog-tags-lampo-2-a-4-688",
+    "listMetadata": "listMetadata---blog-tags-lampof-0-c-d7b"
   },
-  "/blog/tags/lightning-network-fc3": {
-    "__comp": "6875c492",
+  "/blog/tags/lightning-network-c43": {
+    "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "1aa53c6c"
+      "plugin": "plugin---blog-3-c-7-f4e"
     },
-    "sidebar": "814f3328",
+    "sidebar": "sidebar---blog-814-8ac",
     "items": [
       {
-        "content": "e253883a"
+        "content": "content---bloge-25-bd2"
       },
       {
-        "content": "05c763bb"
+        "content": "content---blog-05-c-e6e"
       },
       {
-        "content": "24e8c1df"
+        "content": "content---blog-24-e-486"
       }
     ],
-    "tag": "823708ad",
-    "listMetadata": "3a492f23"
+    "tag": "tag---blog-tags-lightning-network-823-064",
+    "listMetadata": "listMetadata---blog-tags-lightning-network-3-a-4-720"
   },
-  "/blog/testing-332": {
-    "__comp": "ccc49370",
+  "/blog/testing-48d": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "1aa53c6c"
+      "plugin": "plugin---blog-3-c-7-f4e"
     },
-    "sidebar": "814f3328",
-    "content": "69b00f43"
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-testing-69-b-b51"
   },
-  "/blog/v23.12-4a0": {
-    "__comp": "ccc49370",
+  "/blog/v23.12-20b": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "1aa53c6c"
+      "plugin": "plugin---blog-3-c-7-f4e"
     },
-    "sidebar": "814f3328",
-    "content": "ee9a948d"
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-v-23-12-ee-9-f25"
   },
-  "/blog/welcome-e88": {
-    "__comp": "ccc49370",
+  "/blog/welcome-46e": {
+    "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "1aa53c6c"
+      "plugin": "plugin---blog-3-c-7-f4e"
     },
-    "sidebar": "814f3328",
-    "content": "6e89966b"
+    "sidebar": "sidebar---blog-814-8ac",
+    "content": "content---blog-welcome-6-e-8-a1c"
   },
-  "/docs-990": {
-    "__comp": "1be78505",
+  "/docs-224": {
+    "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
-      "plugin": "e6f2cdc7"
+      "plugin": "plugin---docsf-31-fc1"
     },
-    "versionMetadata": "935f2afb"
+    "versionMetadata": "versionMetadata---docs-935-398"
   },
   "/docs/category/lampo-lightning-node---basics-5e6": {
-    "__comp": "14eb3368",
-    "categoryGeneratedIndex": "917d0912"
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "categoryGeneratedIndex": "categoryGeneratedIndex---docs-category-lampo-lightning-node-basics-917-de0"
   },
   "/docs/intro-aed": {
-    "__comp": "17896441",
-    "content": "0e384e19"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-intro-0-e-3-be1"
   },
   "/docs/tutorial-lampod-basics/basic-configuration-12e": {
-    "__comp": "17896441",
-    "content": "8b8659a2"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-lampod-basics-basic-configuration-8-b-8-f10"
   },
   "/docs/tutorial-lampod-basics/configure-bitcoin-backend-8ec": {
-    "__comp": "17896441",
-    "content": "cb39c905"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-lampod-basics-configure-bitcoin-backendcb-3-dad"
   },
   "/docs/tutorial-lampod-basics/how-to-configure-5b6": {
-    "__comp": "17896441",
-    "content": "af807bfc"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-lampod-basics-how-to-configureaf-8-f36"
   },
   "/docs/tutorial-lampod-basics/how-to-contribute-c74": {
-    "__comp": "17896441",
-    "content": "536d1d06"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-lampod-basics-how-to-contribute-536-5a2"
   },
   "/docs/tutorial-lampod-basics/how-to-use-19a": {
-    "__comp": "17896441",
-    "content": "9a5befbc"
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-tutorial-lampod-basics-how-to-use-9-a-5-bb6"
   },
-  "/-56a": {
-    "__comp": "c4f5d8e4",
+  "/-e4e": {
+    "__comp": "__comp---site-src-pages-index-jsc-4-f-f99",
     "__context": {
-      "plugin": "a8e73f9b"
+      "plugin": "plugin---b-19-a41"
     },
-    "config": "5e9f5e1a"
+    "config": "config---5-e-9-4f3"
   }
 }
