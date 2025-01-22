@@ -82,13 +82,15 @@ To run the Lampo daemon with the configuration file located at `~/.lampo/signet/
 lampod-cli --network signet
 ```
 
-Upon starting the node, it will display the BIP 39 seed phrase on the terminal for wallet restoration purposes. If you 
-wish to restore the wallet later, use the following command:
+Upon first starting the node, Lampo will create a new wallet and save the BIP 39 seed phrase in the `<root-lampo-dir>/<network>/wallet.dat` file. If you wish to restore the wallet later, use the following command:
 
 
 ```bash
-lampod-cli --network signet --restore-wallet "<seed words>"
+lampod-cli --network signet --restore-wallet
 ```
+> **Note**:
+1. If a `wallet.dat` file exists and the user does not specify `--restore-wallet`, Lampo will try to restore from the file with a warning: `Loading from existing wallet`.
+2. If a `wallet.dat` file does not exist and the user specifies `--restore-wallet`, Lampo will ask for BIP 39 seed words. These words will be saved to a new `wallet.dat` file.
 
 Once the node is up and running, you can open a separate terminal and use `lampo-cli` to interact 
 with the daemon. To retrieve information using the `getinfo` function, execute the following command:
